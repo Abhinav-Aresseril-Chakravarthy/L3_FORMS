@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My First Form</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>My First Form</h1>
+                <p>Empower the art of data collection!</p>
+            </header>
+
+            <!-- 
+                OBJECTIVE:
+
+                Add a form that collects user information
+                and user interests. Submit the form to Netlify
+                for processing.
+             -->
+             <form action="./thanks.html" netlify method="post">
+                <fieldset>
+                    <legend>User Information - Informations de l'utilisateur</legend>
+
+                    <p>
+                        <label for="FirstName">First Name - Prénom: </label><br>
+                        <input type="text" name="FirstName" id="FirstName">
+                        
+                    </p>
+                    <p>
+                        <label for="LastName">Last Name - Nom de Famille: </label><br>
+                        <input type="text" name="LastName" id="LastName">
+
+                    </p>
+                    <p>
+                        <label for="DateofBirth">Date of Bith - Date de Naissance: </label><br>
+                        <input type="date" name="DateofBirth" id="DateofBirth">
+
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interests - Intérêt</legend>
+
+                    <p>Check all that Apply - Cochez toutes les cases</p>
+                    
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="movies" id="movies" value="movies">
+                            <label for="movies">Movies - Films</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="tv" id="tv" value="tv">
+                            <label for="tv">TV - la télé</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="sports" id="sports" value="sports">
+                            <label for="sports">Sports - Des sports</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+             </form>
+        </main>
+    </body>
+</html>
